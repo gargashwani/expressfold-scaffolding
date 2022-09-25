@@ -1,0 +1,42 @@
+{
+  "name": "expressfold",
+  "version": "1.0.9",
+  "description": "Laravel like MVC Express based framework",
+  "main": "app.js",
+  "scripts": {
+    "expressfold":"node ./library/expressfold.js",
+    "artisan": "node ./library/index.js",
+    "start":"node app.js",
+    "watch":"nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/ashwanigarg/expressfold.git"
+  },
+  "keywords": [
+    "expressjs mvc",
+    "nodejs mvc",
+    "mvc"
+  ],
+  "author": "AshwaniGarg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/ashwanigarg/expressfold/issues"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.0",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.6.1"
+    },
+    "devDependencies": {
+      "dotenv": "^16.0.2",
+      "nodemon": "^2.0.20"
+    },
+  "homepage": "https://gitlab.com/ashwanigarg/expressfold#readme"
+}
