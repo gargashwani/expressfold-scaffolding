@@ -47,10 +47,25 @@ npx expressfold make:controller Project
 ```
 
 Access directories easily with defined paths
-`__app` To access app directory 
-`__base` To access base/root directory 
-`__routes` To access routes directory 
-`__public` To access public directory 
-`__views` To access views directory 
+To access app directory
+```
+__app
+```
+To access base/root directory 
+```
+__base
+```
+To access routes directory 
+```
+__routes
+```
+To access public directory
+```
+__public
+```
+To access views directory
+```
+__views
+```
 
 You can customize more in `config/constants.js`
