@@ -24,3 +24,12 @@ i.e. ProjectController, Project Model and Project Routes
 ```
 npx expressfold make:controller Project
 ```
+
+Access directories easily with defined paths
+`__app` To access app directory 
+`__base` To access base/root directory 
+`__routes` To access routes directory 
+`__public` To access public directory 
+`__views` To access views directory 
+
+You can customize more in `config/constants.js`

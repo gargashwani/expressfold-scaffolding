@@ -1,9 +1,10 @@
 // Filename : userRoutes.js 
 const express = require('express')
 const router = express.Router()
+const path = require('path')
 
 router.get('/', (req, res) => {
-   res.send('Hello Expressfold!');
+   res.sendFile(path.join(__views, '/index.html'));
 });
 
 module.exports = router;

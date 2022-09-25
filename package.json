@@ -1,6 +1,6 @@
 {
-  "name": "expressfold",
-  "version": "1.1.0",
+  "name": "expressfold-framework",
+  "version": "1.1.4",
   "description": "Laravel like Express based MVC framework",
   "main": "app.js",
   "scripts": {

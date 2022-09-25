@@ -1,4 +1,7 @@
-global.__basedir = __dirname;
+
+require('./config/constants')
+console.log('__routes');
+console.log(__routes);
 const express = require('express')
 require('dotenv').config();
 const {errorHandler} = require('./app/Http/Middlewares/errorMiddleware')
@@ -10,7 +13,7 @@ const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
-
+app.use(express.static('public'))
 
 
 
