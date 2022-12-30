@@ -67,5 +67,36 @@ To access views directory
 ```
 __views
 ```
+To access config directory
+```
+__config
+```
 
 You can customize more in `config/constants.js`
+
+To configure SMTP, Go to .env file and add the SMTP configuration in the given parameters.
+```
+MAIL_HOST=smtp.gmail.com
+MAIL_PORT=587
+MAIL_USER='example@example.com'
+MAIL_PASS='password'
+```
+Then, to send an email from any controller or route, you just have to import the mail configuration file.
+i.e `const mailer =  require('./config/mail.js');`
+
+To update any specific email options, For example, if you want to update email subject `mailer.mailOptions.subject='This is updated subject';`
+```
+// SMTP Server Config
+const mailer =  require('./config/mail.js');
+
+mailer.mailOptions.subject='This is updated subject';
+
+mailer.transporter.sendMail(mailer.mailOptions, function (err, info) {
+   if(err)
+     console.log(err)
+   else
+     console.log(info);
+});
+
+```
+For more information on [nodemail](https://nodemailer.com/)

@@ -1,7 +1,6 @@
 
+require('./globals')
 require('./config/constants')
-console.log('__routes');
-console.log(__routes);
 const express = require('express')
 require('dotenv').config();
 const {errorHandler} = require('./app/Http/Middlewares/errorMiddleware')

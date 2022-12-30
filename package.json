@@ -1,8 +1,9 @@
 {
   "name": "expressfold-framework",
-  "version": "1.1.7",
+  "version": "1.2.1",
   "description": "Laravel like Express based MVC framework",
   "main": "app.js",
+  "type": "commonjs",
   "scripts": {
     "start": "node app.js",
     "watch": "nodemon app.js",
@@ -31,7 +32,9 @@
     "express-async-handler": "^1.2.0",
     "expressfold": "^1.1.1",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.6.1"
+    "mongoose": "^6.6.1",
+    "nodemailer": "^6.8.0",
+    "nodemailer-express-handlebars": "^5.0.0"
   },
   "devDependencies": {
     "dotenv": "^16.0.2",
